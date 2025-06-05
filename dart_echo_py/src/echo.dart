@@ -1,4 +1,3 @@
-// main.dart
 import 'dart:io'; // Required for accessing command-line arguments
 
 void main(List<String> arguments) {
@@ -10,7 +9,7 @@ void main(List<String> arguments) {
   // Check if any arguments were provided
   if (arguments.isEmpty) {
     print('No arguments were provided.');
-    print('Usage: dart run . <arg1> <arg2> ...');
+    print('Usage: dart_echo_py . <arg1> <arg2> ...');
   } else {
     // Iterate over the arguments list and print each one
     for (int i = 0; i < arguments.length; i++) {
