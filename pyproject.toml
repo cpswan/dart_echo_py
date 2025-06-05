@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dart_echo_py"
+version = "0.1.2"
+description = "A Python package that includes a Dart AOT binary."
+authors = [{ name = "Chris Swan", email = "chris@atsign.com" }]
+readme = "README.md"
+license = "BSD-3-Clause"
+requires-python = ">=3.9"
+
+[project.scripts]
+dart_echo_py = "dart_echo_py:__init__"
+
+[tool.setuptools.packages.find]
+where = ["."] # Search for packages in the current directory
+
+[tool.setuptools.package-data]
+"dart_echo_py" = ["bin/*"] # Include all files in dart_echo_py/bin/
